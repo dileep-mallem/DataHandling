@@ -86,6 +86,7 @@ print(d3)
 #  [0 0 0 0 0 4]
 #  [0 0 0 0 0 0]
 #  [0 0 0 0 0 0]]
+print(np.diag(d2)) # Extract Diagonal from d2 [1 2 3]
 print()
 
 # .vander(x,n) Vandermonde matrix 
@@ -111,6 +112,9 @@ o2=np.ones((2,3,2))
 print(o1)
 print(o2)
 
+# _like variants — match another array's shape
+np.zeros_like(n2)           # same shape as a2, all zeros
+np.ones_like(o2)            # same shape as a2, all ones
 # random 
 # numpy.indices 
 
