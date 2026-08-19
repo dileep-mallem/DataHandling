@@ -18,16 +18,24 @@ print(b.ravel())  # returns VIEW if possible, shape (12,)
 # Transpose 1.a.T 2.np.transpose(a,axis=(optional))
 print(f" b : {b} \n Its Tranpose : \n {b.T}\n ")
 print(c)
-print(np.transpose(c,(1,0,2))) # specify exact axis order
+print(np.transpose(c,(1,0,2))) # specify exact axis order , axis 1 to fromt , 0 to middle and 3 to back 
 a=np.array([[1,2,3],[4,5,6]])
 print(np.transpose(a))
 
 # Adding and Removing Dimensions 
 a=np.array([1,2,3]) # Shape(3,)
-print(a[np.newaxis,:].shape) # (1,3) -> row vector
-print(a[:,np.newaxis].shape) # (3,1) -> col vector
-print(np.expand_dims(a,0).shape) # (1,3)
-print(np.squeeze(a[np.newaxis]).shape) # (3,) — remove size-1 axes
+# Add a row dimension (makes it a 2D row vector)
+print(a,a[np.newaxis,:],a[np.newaxis,:].shape) # (1,3) -> row vector
+# Add a colum dimension (makes it a 2D col vector)
+print(a,a[:,np.newaxis],a[:,np.newaxis].shape) # (3,1) -> col vector
+# Add an axis at index 0 (front)
+print(a,np.expand_dims(a,0),np.expand_dims(a,0).shape) # (1,3)
+# Add an axis at index 1 (end)
+print(a,np.expand_dims(a,1),np.expand_dims(a,1).shape) # (3,1)
+# Remove all size-1 dimensions
+print(a,np.squeeze(a[np.newaxis]),np.squeeze(a[np.newaxis]).shape) # (3,) — remove size-1 axes
 
 
-
+# None is an alias for np.newaxis
+b=a[:,None] 
+print(b) # shape : (3,1)
