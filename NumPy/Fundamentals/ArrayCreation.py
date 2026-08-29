@@ -119,4 +119,10 @@ np.ones_like(o2)            # same shape as a2, all ones
 # numpy.indices 
 
 
-
+# Full  
+f1=np.full((2,3),25,dtype=int) # full(shape,fillValue(Scalar or List),dtype)
+print(f1)
+f2=np.full((2,3),[5],dtype=int) 
+print(f2)
+# [[5 5 5]
+#  [5 5 5]]
