@@ -12,6 +12,21 @@ m=np.array([[1,2],[3,4],[5,6]])
 rows=[0,2];cols=[1,0]
 print(m[rows,cols]) # [ 2 5] -> m[0,1] and m[2,0]
 
+# Extracting Borders
+
+p=np.arange(1,26).reshape(5,5)
+# 1.Using Explicit Fancy Indexing 
+# 2.print Expicit;y Top , bootm roes and left and ritht cols 
+
+#**** 3. Create coordinate grids                            # ******
+
+rows, cols = np.indices((5, 5))
+mask = (rows == 0) | (rows == 4) | (cols == 0) | (cols == 4)
+
+# Apply fancy indexing via boolean mask
+border_elements = p[mask]
+print(border_elements)
+
 # Boolean Indexing 
 a=np.array([3,-1,4,-2,7])
 print(a[a>0]) # [ 3 4 5]
