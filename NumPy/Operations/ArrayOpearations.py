@@ -12,6 +12,14 @@ print(b//a)
 print(a**2)
 print(b%10)
 print("\nScalar Broadcasting \n")
+
+# Logical AND (&)
+print((a>15) & (b<4)) # [False  True  True False]
+#logical OR (|)
+print((a>15) | (b<4)) # [ True  True  True  True]
+print()
+
+
 # Scalar Broadcasting -> Scalar applied to every Element 
 print(a*5)
 print(a+10)
