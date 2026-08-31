@@ -17,3 +17,23 @@ print(np.cumsum(a,axis=0)) # runnig sum (like cummulative) .cumsum(mtx(m),axis,d
 print(np.cumsum(a,axis=1)) # axis =1 row wise 
 # [[ 1  3  6]
 #  [ 4  9 15]]
+
+
+# Aggregation Patterns 
+
+# .sum()
+
+prices=np.array([100,250,75,400,150])
+
+# Count how many prices over 150
+print(f"prices over 150 : {(prices>150).sum()}")
+
+# cheacking Elements : .any() .all()
+
+scores=np.array([85,92,45,78,99])
+
+# Did anyone fails < 50 
+print((scores<50).any()) # True 
+
+# Did everyone Pass 
+print((scores>50).all()) # False
