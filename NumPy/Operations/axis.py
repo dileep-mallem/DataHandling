@@ -5,8 +5,11 @@ import numpy as np
 a=np.array([[1,2,3],
             [4,5,6]]) # shape(2,3)
 
-print(np.sum(a,axis=0)) # (3,) rows collapsed -> [5 7 9] 
-print(np.sum(a,axis=1)) # (2,) cols collapsed -> [6 15]
+# sxis=0 (Column-wise): Collapses the rows. It looks down each column.
+# axis=1 (Row-wise): Collapses the columns. It looks across each row. 
+
+print(np.sum(a,axis=0)) # (3,) rows collapsed -> [5 7 9]  sum down the cols 
+print(np.sum(a,axis=1)) # (2,) cols collapsed -> [6 15] sum acr0ss the rows
 
 # keepdims=True -> preserve dimension for broadcasting 
 print(np.sum(a,axis=1,keepdims=True)) # shape(2,1) -> : [[6],[15]]
