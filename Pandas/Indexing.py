@@ -97,3 +97,24 @@ print(df.loc[:,["name","dept"]][df["score"]>80]) # Accesing[Boolean_mask]
 #   name dept
 # 0    A   CS
 # 2    C   CS
+
+
+# Query
+print(df.query("score >80 and dept=='CS'"))  # same as boolean filter 
+#  name  score dept
+# 0    A     85   CS
+# 2    C     90   CS
+
+# Setting Values 
+
+df.loc[df["score"]<70,"score"]=70 #df["score"]<70 -> depict rows  , modifies original 
+print(df)
+#   name  score dept
+# 0    A     85   CS
+# 1    B     72   EE
+# 2    C     90   CS
+# 3    D     70   ME
+
+# The SettingWithCopyWarning: When you chain indexing like df[mask]["col"] = val,
+# Pandas doesn't know if it's modifying a copy or the original — 
+# so it warns. Always use df.loc[mask, "col"] = val instead. 
