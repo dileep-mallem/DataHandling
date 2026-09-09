@@ -1,0 +1,11 @@
+student_id,name,age,gender,grade_level,math_score,science_score,english_score,attendance_rate,passed
+101,Liam Smith,15,M,10,88.0,92.0,85.0,95%,True
+102,Olivia Jones,16,F,11,,88.0,90.0,92%,True
+103,Noah Brown,15,M,10,55.0,60.0,58.0,80%,False
+104,Emma Davis,17,F,12,95.0,,94.0,98%,True
+105,Oliver Miller,16,M,11,72.0,75.0,70.0,85%,True
+106,Sophia Wilson,15,F,10,90.0,94.0,,96%,True
+107,Elijah Moore,17,M,12,45.0,52.0,48.0,78%,False
+108,Isabella Taylor,16,F,11,83.0,85.0,87.0,91%,True
+109,James Anderson,15,M,10,68.0,70.0,72.0,,True
+110,Ava Thomas,17,F,12,100.0,98.0,99.0,99%,True
