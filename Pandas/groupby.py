@@ -83,3 +83,7 @@ for dept,group_df in df.groupby("dept") :
 
 #  CS : 84.3
 #  EE : 70.0
+
+# transform vs apply vs agg: Use agg when you want one summary value per group (collapses rows).
+#  Use transform when you want to add a group-level stat back to the original DataFrame (same shape).
+#  Use apply for custom functions that return anything — most flexible but slowest.
