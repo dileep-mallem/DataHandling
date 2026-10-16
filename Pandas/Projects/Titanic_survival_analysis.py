@@ -1,9 +1,10 @@
-import pandas as pd 
+import pandas as pd
 import numpy as np
+from pathlib import Path
 
-# Load and First Look 
-
-df = pd.read_csv("/home/dileep-kumar/Desktop/Data/Pandas/titanic.csv")
+# Load and First Look
+base = Path(__file__).resolve().parent.parent   # the Pandas folder
+df = pd.read_csv(base / "titanic.csv")
 print(f"Shape : {df.shape} \n ")
 print(f"Dtypes : \n{df.dtypes} \n")
 print(f"Null Counts : \n {df.isnull().sum()} \n\nTotal Null Count {df.isnull().sum().sum()} \n")
