@@ -1,0 +1,37 @@
+date,product,category,region,units_sold,unit_price,discount_pct,sales_channel
+2025-01-05,Laptop,Electronics,South,3,52000,5,Online
+2025-01-12,Headphones,Electronics,North,18,1800,10,Store
+2025-01-19,Office Chair,Furniture,West,7,6500,0,Online
+2025-02-03,Notebook,Stationery,East,60,80,0,Store
+2025-02-11,Desk,Furniture,South,4,12000,8,Online
+2025-02-20,Monitor,Electronics,North,6,14500,5,Online
+2025-03-02,Pen Set,Stationery,West,35,250,0,Store
+2025-03-15,Laptop,Electronics,East,2,52000,7,Online
+2025-03-24,Bookshelf,Furniture,South,5,8200,5,Store
+2025-04-06,Headphones,Electronics,West,22,1800,12,Online
+2025-04-17,Notebook,Stationery,North,75,80,0,Store
+2025-04-26,Desk,Furniture,East,3,12000,10,Online
+2025-05-04,Monitor,Electronics,South,8,14500,6,Store
+2025-05-13,Office Chair,Furniture,North,9,6500,5,Online
+2025-05-22,Pen Set,Stationery,East,42,250,0,Store
+2025-06-01,Laptop,Electronics,West,4,52000,8,Online
+2025-06-14,Bookshelf,Furniture,North,6,8200,0,Store
+2025-06-25,Headphones,Electronics,South,25,1800,10,Online
+2025-07-03,Notebook,Stationery,South,90,80,0,Store
+2025-07-16,Desk,Furniture,West,5,12000,7,Online
+2025-07-28,Monitor,Electronics,East,7,14500,5,Store
+2025-08-08,Office Chair,Furniture,East,11,6500,6,Online
+2025-08-19,Pen Set,Stationery,North,50,250,0,Store
+2025-08-27,Laptop,Electronics,South,3,52000,4,Online
+2025-09-05,Bookshelf,Furniture,West,7,8200,5,Store
+2025-09-14,Headphones,Electronics,East,20,1800,10,Online
+2025-09-23,Notebook,Stationery,West,85,80,0,Store
+2025-10-02,Desk,Furniture,North,6,12000,5,Online
+2025-10-15,Monitor,Electronics,West,9,14500,7,Store
+2025-10-25,Pen Set,Stationery,South,45,250,0,Store
+2025-11-07,Laptop,Electronics,North,5,52000,6,Online
+2025-11-18,Office Chair,Furniture,South,10,6500,4,Online
+2025-11-26,Notebook,Stationery,East,95,80,0,Store
+2025-12-04,Bookshelf,Furniture,East,8,8200,5,Online
+2025-12-16,Headphones,Electronics,North,28,1800,10,Store
+2025-12-27,Monitor,Electronics,South,10,14500,5,Online
