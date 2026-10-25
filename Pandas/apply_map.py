@@ -1,9 +1,6 @@
 import pandas as pd 
 import numpy as np 
 
-import pandas as pd 
-import numpy as np 
-
 df = pd.DataFrame({
     "name":   ["Dileep", "Priya", "Ravi", "Ananya"],
     "age":    [21, 20, 22, 21],
